@@ -1,36 +1,76 @@
-# TechTest
+# TechTest – Record Explorer
 
-A minimal record application
+A full-stack monorepo built with Nx that demonstrates a simple record browsing application.
 
-## Starting the app
+The system consists of an Angular frontend that retrieves and displays records from a NestJS backend API. State management on the frontend is handled using NgRx.
 
-Install nx globally
-```
-npm add --global nx
-```
+## Overview
 
-### Frontend
-Serve the application
-```
+This project is structured as a monorepo using Nx, containing two independent applications:
+
+- **Frontend (`record-finder`)**
+  - Angular single-page application
+  - Uses NgRx for state management
+  - Provides a UI to browse and view records
+
+- **Backend (`backend`)**
+  - NestJS REST API
+  - Serves record data to the frontend
+  - Organised using controllers, services, and repositories
+
+The frontend communicates with the backend via HTTP to retrieve record data.
+
+## Architecture
+
+Angular Frontend (record-finder)
+→ HTTP Requests (NgRx Effects)
+→ NestJS Backend API (backend)
+→ JSON-based record data source
+
+## Getting Started
+
+Install Nx globally:
+npm install -g nx
+
+Install dependencies:
+npm install
+
+## Running the applications
+
+Frontend:
 nx serve record-finder
-```
 
-### Backend
-Serve the application
-```
+Backend:
 nx serve backend
-```
 
-## Stack
+## Tech Stack
 
-This app is a monorepo that uses NX. It is made up of a frontend named 'record-finder' that is built using Angular with NgRx for state management, and a backend named 'backend' that is built using NestJS.
+Frontend:
+- Angular
+- NgRx (state management)
+- RxJS
+- Bootstrap
 
-### Frontend
-- [Angular](https://angular.io/)
-- [NgRx](https://ngrx.io/)
-  - State management
-- [Bootstrap](https://getbootstrap.com/)
-  - Responsive UI
+Backend:
+- NestJS
+- REST API architecture
+- JSON data repository pattern
 
-### Backend
-- [NestJS](https://nestjs.com/)
+Workspace:
+- Nx monorepo
+
+## Project Structure
+
+apps/
+  record-finder/   Angular frontend
+  backend/         NestJS API
+
+nx.json
+tsconfig.base.json
+package.json
+
+## Notes
+
+- Nx is used to manage both applications within a single workspace.
+- The backend is intentionally simple and data-driven using a JSON repository.
+- The frontend uses NgRx to manage state in a predictable way.
