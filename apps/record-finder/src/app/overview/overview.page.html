@@ -1,0 +1,70 @@
+<div class="container-md">
+
+  <app-hero-box></app-hero-box>
+
+  <div class="mb-4 d-flex flex-wrap align-items-center gap-3">
+
+    <!-- Search Box -->
+    <div class="flex-grow-1">
+      <div class="input-group">
+        <input 
+          type="text" 
+          class="form-control" 
+          placeholder="Search by record name..." 
+          aria-label="Search by record name"
+          (input)="onSearch($event.target.value)">
+      </div>
+    </div>
+
+    <!-- Sort Button -->
+    <div class="sort-icon-container text-end">
+      <button class="btn btn-light" (click)="toggleSort()">
+        A-Z
+        <i [ngClass]="sortDirection === 'asc' ? 'bi-arrow-down-short' : 'bi-arrow-up-short'"></i>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Temperament Pills -->
+  <h4>Filter by:</h4>
+  <div class="d-flex flex-wrap gap-2 align-items-center mb-3">
+    <span *ngFor="let temp of temperamentOptions"
+          class="badge pill"
+          [ngClass]="{
+            'bg-primary': selectedTemperaments.includes(temp),
+            'bg-light text-dark': !selectedTemperaments.includes(temp)
+          }"
+          (click)="selectTemperament(temp)">
+      {{ temp }}
+    </span>
+  </div>
+
+  <!-- Record Cards -->
+  <div class="row">
+    <ng-container *ngIf="(filteredRecords$ | async) as records">
+      <div *ngIf="records.length === 0" class="col-12 text-center my-4">
+        <p>No records found for your search.</p>
+      </div>
+    </ng-container>
+    
+    <div *ngFor="let record of filteredRecords$ | async; trackBy: trackByName" class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img [src]="record.image" class="card-img-top" [alt]="record.name" loading="lazy">
+
+        <div class="card-body">
+          <h5 class="card-title">{{ record.name }}</h5>
+          <p class="card-text">{{ record.description }}</p>
+        </div>
+
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><strong>Size:</strong> {{ record.size }}</li>
+          <li class="list-group-item"><strong>Origin:</strong> {{ record.origin }}</li>
+          <li class="list-group-item"><strong>Edition:</strong> {{ record.lifeExpectancy }}</li>
+          <li class="list-group-item"><strong>Style:</strong> {{ record.temperament.join(', ') }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>

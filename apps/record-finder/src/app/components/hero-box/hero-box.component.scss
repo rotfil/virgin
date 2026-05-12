@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Helvetica Now';
+    font-style: normal;
+    font-weight: normal;
+    font-display: auto;
+    src: url('https://zigzag.dog/wp-content/uploads/2021/02/normal_normal_normal.woff2') format('woff2'),
+         url('https://zigzag.dog/wp-content/uploads/2021/02/normal_normal_normal.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Cooper';
+    font-style: normal;
+    font-weight: normal;
+    font-display: auto;
+    src: url('https://zigzag.dog/wp-content/uploads/2021/01/font.woff2') format('woff2'),
+         url('https://zigzag.dog/wp-content/uploads/2021/01/font.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Cooper';
+    font-style: normal;
+    font-weight: bold;
+    font-display: auto;
+    src: url('https://zigzag.dog/wp-content/uploads/2021/01/font-1.woff2') format('woff2'),
+         url('https://zigzag.dog/wp-content/uploads/2021/01/font-1.woff') format('woff');
+  }
+  
+  .hero-box {
+    background-color: #E10A0A;
+    color: white;
+    margin: 40px 0;
+    border-radius: 40px;
+  
+    .content {
+      width: 50%;
+      margin: auto;
+    }
+  
+    h1 {
+      font-family: 'Cooper', Serif;
+      font-size: 72px;
+    }
+  
+    p {
+      font-family: 'Helvetica Now', Serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }

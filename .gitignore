@@ -1,0 +1,26 @@
+# dependencies
+node_modules/
+
+# build outputs
+dist/
+
+# Angular cache
+.angular/
+
+# Nx cache (important for your setup)
+.nx/
+tmp/
+
+# misc caches
+.cache/
+.tmp/
+
+# test coverage
+coverage/
+
+# logs
+npm-debug.log*
+yarn-error.log*
+
+# macOS junk
+.DS_Store

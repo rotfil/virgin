@@ -1,0 +1,75 @@
+[
+  {
+    "name": "Sgt. Pepper's Lonely Hearts Club Band",
+    "description": "The Beatles' landmark 1967 album and one of the most iconic record sleeves in popular music.",
+    "size": "12-inch LP",
+    "origin": "United Kingdom",
+    "lifeExpectancy": "Classic release",
+    "temperament": ["Iconic", "Colourful", "Experimental", "Memorable"],
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sgt.%20Pepper%27s%20Lonely%20Hearts%20Club%20Band%20album%20art.jpg"
+  },
+  {
+    "name": "Abbey Road",
+    "description": "The Beatles' 1969 album with one of the most recognisable covers ever printed.",
+    "size": "12-inch LP",
+    "origin": "United Kingdom",
+    "lifeExpectancy": "Classic release",
+    "temperament": ["Classic", "Polished", "Iconic", "Timeless"],
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Beatles%20Abbey%20Road%20album%20cover.jpg"
+  },
+  {
+    "name": "Let It Be",
+    "description": "The Beatles' 1970 album, presented here with the classic album cover file from Commons.",
+    "size": "12-inch LP",
+    "origin": "United Kingdom",
+    "lifeExpectancy": "Classic release",
+    "temperament": ["Reflective", "Famous", "Simple", "Enduring"],
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Beatles%20-%20Let%20It%20Be.png"
+  },
+  {
+    "name": "Making Movies",
+    "description": "Dire Straits' 1980 album, shown with the sleeve artwork file from Wikimedia Commons.",
+    "size": "12-inch LP",
+    "origin": "United Kingdom",
+    "lifeExpectancy": "Classic release",
+    "temperament": ["Sharp", "Clean", "Confident", "Analog"],
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sleeve%20of%20Making%20Movies.svg"
+  },
+  {
+    "name": "The Dark Side of the Moon",
+    "description": "A landmark 1973 album with one of the most recognisable sleeves in rock.",
+    "size": "LP",
+    "origin": "United Kingdom",
+    "lifeExpectancy": "Classic release",
+    "temperament": ["Iconic", "Atmospheric", "Timeless", "Progressive"],
+    "image": "https://en.wikipedia.org/wiki/Special:FilePath/The_Dark_Side_of_the_Moon_cover.svg"
+  },
+  {
+    "name": "Led Zeppelin IV",
+    "description": "A 1971 rock record with a famously stark, memorable cover.",
+    "size": "LP",
+    "origin": "United Kingdom",
+    "lifeExpectancy": "Classic release",
+    "temperament": ["Heavy", "Classic", "Bold", "Enduring"],
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Zeppelin%20IV.jpg"
+  },
+  {
+    "name": "Rumours",
+    "description": "Fleetwood Mac’s 1977 classic, represented here with a square promotional image linked to the album.",
+    "size": "LP",
+    "origin": "United Kingdom / United States",
+    "lifeExpectancy": "Classic release",
+    "temperament": ["Clean", "Smooth", "Famous", "Polished"],
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Fleetwood%20Mac%20Billboard%201977.jpg"
+  },
+  {
+    "name": "The Wall",
+    "description": "Pink Floyd’s 1979 double album with a simple, square cover that works really well in a grid.",
+    "size": "Double LP",
+    "origin": "United Kingdom",
+    "lifeExpectancy": "Classic release",
+    "temperament": ["Dramatic", "Sparse", "Iconic", "Conceptual"],
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Wall%20Cover.svg"
+  }, { "name": "Tubular Bells", "description": "Mike Oldfield’s 1973 debut album, a landmark progressive rock instrumental work and the first release on Virgin Records.", "size": "12-inch LP", "origin": "United Kingdom", "lifeExpectancy": "Classic release", "temperament": ["Experimental", "Atmospheric", "Minimalist", "Iconic", "Progressive"], "image": "https://upload.wikimedia.org/wikipedia/en/0/0d/Mike_oldfield_tubular_bells_album_cover.jpg" }
+  
+]
