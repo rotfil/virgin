@@ -19,13 +19,13 @@ export const filterRecords = createAction(
     query?: string; 
     size?: string | null; 
     origin?: string | null;
-    temperaments?: string[];
+    styles?: string[];
   }>()
 );
 
-export const filterByTemperament = createAction(
-  '[Record] Filter by Temperament',
-  props<{ temperament: string }>()
+export const filterBystyle = createAction(
+  '[Record] Filter by style',
+  props<{ style: string }>()
 );
 
 export const sortRecords = createAction(

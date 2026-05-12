@@ -3,8 +3,8 @@ export interface Record {
   description: string;
   size: string;
   origin: string;
-  lifeExpectancy: string;
-  temperament: string[];
+  releaseType: string;
+  style: string[];
   image: string;
 }
 
@@ -12,7 +12,7 @@ export interface RecordState {
   recordList: Record[];
   filteredRecords: Record[];
   searchQuery: string; 
-  selectedTemperaments: string[];
+  selectedstyles: string[];
   sortKey: 'name' | null;
   sortDirection: 'asc' | 'desc';
 } 

@@ -26,16 +26,16 @@
 
   </div>
 
-  <!-- Temperament Pills -->
+  <!-- style Pills -->
   <h4>Filter by:</h4>
   <div class="d-flex flex-wrap gap-2 align-items-center mb-3">
-    <span *ngFor="let temp of temperamentOptions"
+    <span *ngFor="let temp of styleOptions"
           class="badge pill"
           [ngClass]="{
-            'bg-primary': selectedTemperaments.includes(temp),
-            'bg-light text-dark': !selectedTemperaments.includes(temp)
+            'bg-primary': selectedstyles.includes(temp),
+            'bg-light text-dark': !selectedstyles.includes(temp)
           }"
-          (click)="selectTemperament(temp)">
+          (click)="selectstyle(temp)">
       {{ temp }}
     </span>
   </div>
@@ -60,8 +60,8 @@
         <ul class="list-group list-group-flush">
           <li class="list-group-item"><strong>Size:</strong> {{ record.size }}</li>
           <li class="list-group-item"><strong>Origin:</strong> {{ record.origin }}</li>
-          <li class="list-group-item"><strong>Edition:</strong> {{ record.lifeExpectancy }}</li>
-          <li class="list-group-item"><strong>Style:</strong> {{ record.temperament.join(', ') }}</li>
+          <li class="list-group-item"><strong>Edition:</strong> {{ record.releaseType }}</li>
+          <li class="list-group-item"><strong>Style:</strong> {{ record.style.join(', ') }}</li>
         </ul>
       </div>
     </div>

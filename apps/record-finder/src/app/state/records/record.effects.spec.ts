@@ -15,8 +15,8 @@ describe('RecordEffects', () => {
   let store: MockStore;
 
   const mockRecordList: Record[] = [
-    { name: 'Pomeranian', description: '', size: '', origin: '', lifeExpectancy: '', temperament: [], image: '' },
-    { name: 'Poodle', description: '', size: '', origin: '', lifeExpectancy: '', temperament: [], image: '' }
+    { name: 'Abbey Road', description: '', size: '', origin: '', releaseType: '', style: [], image: '' },
+    { name: 'Let It Be', description: '', size: '', origin: '', releaseType: '', style: [], image: '' }
   ];
 
   beforeEach(() => {

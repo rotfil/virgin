@@ -7,7 +7,7 @@ export const initialState: RecordState = {
   recordList: [],
   filteredRecords: [],
   searchQuery: '',
-  selectedTemperaments: [],
+  selectedstyles: [],
   sortKey: 'name',
   sortDirection: 'asc',
 };
@@ -16,9 +16,9 @@ export const initialState: RecordState = {
 const filterBySearch = (records: Record[], query: string) =>
   records.filter(b => b.name.toLowerCase().includes(query.toLowerCase()));
 
-const filterByTemperaments = (records: Record[], temperaments: string[]) =>
-  temperaments.length > 0
-    ? records.filter(b => b.temperament.some(temp => temperaments.includes(temp)))
+const filterBystyles = (records: Record[], styles: string[]) =>
+  styles.length > 0
+    ? records.filter(b => b.style.some(temp => styles.includes(temp)))
     : records;
 
 const sortByName = (records: Record[], direction: 'asc' | 'desc') =>
@@ -28,7 +28,7 @@ const applyFiltersAndSort = (state: RecordState): RecordState => {
   let filtered = [...state.recordList];
 
   filtered = filterBySearch(filtered, state.searchQuery);
-  filtered = filterByTemperaments(filtered, state.selectedTemperaments);
+  filtered = filterBystyles(filtered, state.selectedstyles);
   filtered = sortByName(filtered, state.sortDirection);
 
   return { ...state, filteredRecords: filtered };
@@ -53,10 +53,10 @@ export const recordReducer = createFeature({
       applyFiltersAndSort({ ...state, sortDirection: direction })
     ),
 
-    on(filterRecords, (state, { size, origin, temperaments, query }) =>
+    on(filterRecords, (state, { size, origin, styles, query }) =>
       applyFiltersAndSort({
         ...state,
-        selectedTemperaments: temperaments ?? state.selectedTemperaments,
+        selectedstyles: styles ?? state.selectedstyles,
         searchQuery: query ?? state.searchQuery
       })
     )

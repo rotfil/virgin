@@ -3,7 +3,7 @@ export interface Record {
   description: string;
   size: string;
   origin: string;
-  lifeExpectancy: string;
-  temperament: string[];
+  releaseType: string;
+  style: string[];
   image: string;
 }

@@ -8,8 +8,8 @@ describe('RecordController', () => {
   let recordService: RecordService;
 
   const mockRecordList = [
-    { name: 'Pomeranian', description: 'Small dog', size: 'Small', origin: 'Germany', lifeExpectancy: '12-16', temperament: ['Playful'], image: 'pomeranian.jpg' },
-    { name: 'Labrador', description: 'Friendly dog', size: 'Medium', origin: 'Canada', lifeExpectancy: '10-12', temperament: ['Friendly'], image: 'labrador.jpg' }
+    { name: 'Abbey Road', description: 'Great song', size: 'Small', origin: 'UK', releaseType: '12-16', style: ['Playful'], image: 'abbey-road.jpg' },
+    { name: 'Let It Be', description: 'Excellent', size: 'Medium', origin: 'UK', releaseType: '10-12', style: ['Friendly'], image: 'Abbey-Road2.jpg' }
   ];
 
   beforeAll(async () => {

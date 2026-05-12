@@ -23,7 +23,7 @@ export class OverviewPageComponent implements OnInit {
 
   filteredRecords$!: Observable<Record[]>;
 
-  temperamentOptions: string[] = [
+  styleOptions: string[] = [
     'Iconic',
     'Colourful',
     'Experimental',
@@ -48,7 +48,7 @@ export class OverviewPageComponent implements OnInit {
     'Sparse',
     'Conceptual'
   ];
-  selectedTemperaments: string[] = [];
+  selectedstyles: string[] = [];
   sortDirection: 'asc' | 'desc' = 'asc';
 
   constructor(private store: Store) {}
@@ -65,14 +65,14 @@ export class OverviewPageComponent implements OnInit {
   }
 
   // Temprement selection 
-  selectTemperament(temp: string): void {
-    if (this.selectedTemperaments.includes(temp)) {
-      this.selectedTemperaments = this.selectedTemperaments.filter(t => t !== temp);
+  selectstyle(temp: string): void {
+    if (this.selectedstyles.includes(temp)) {
+      this.selectedstyles = this.selectedstyles.filter(t => t !== temp);
     } else {
-      this.selectedTemperaments = [...this.selectedTemperaments, temp];
+      this.selectedstyles = [...this.selectedstyles, temp];
     }
 
-    this.store.dispatch(filterRecords({ temperaments: this.selectedTemperaments }));
+    this.store.dispatch(filterRecords({ styles: this.selectedstyles }));
   }
 
   trackByName(index: number, record: Record) {
