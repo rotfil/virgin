@@ -1,8 +1,8 @@
-# TechTest – Record Explorer
+# Virgin Active Tech Test - Record Explorer!
 
-A full-stack monorepo built with Nx that demonstrates a simple record browsing application.
+A full-stack monorepo built with Nx that demonstrates a very simple record browsing application that RB would have enjoyed back in 1971.
 
-The system consists of an Angular frontend that retrieves and displays records from a NestJS backend API. State management on the frontend is handled using NgRx.
+There's an Angular frontend that retrieves and displays records from a NestJS backend API. (State management on the frontend is handled using NgRx).
 
 ## Overview
 
@@ -30,18 +30,18 @@ Angular Frontend (record-finder)
 ## Getting Started
 
 Install Nx globally:
-npm install -g nx
+- npm install -g nx
 
 Install dependencies:
-npm install
+- npm install
 
 ## Running the applications
 
 Frontend:
-nx serve record-finder
+- nx serve record-finder
 
 Backend:
-nx serve backend
+- nx serve backend
 
 ## Tech Stack
 
@@ -58,19 +58,3 @@ Backend:
 
 Workspace:
 - Nx monorepo
-
-## Project Structure
-
-apps/
-  record-finder/   Angular frontend
-  backend/         NestJS API
-
-nx.json
-tsconfig.base.json
-package.json
-
-## Notes
-
-- Nx is used to manage both applications within a single workspace.
-- The backend is intentionally simple and data-driven using a JSON repository.
-- The frontend uses NgRx to manage state in a predictable way.
